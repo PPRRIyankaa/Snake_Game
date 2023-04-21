@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#body{
+    background-image: url("./images.jpg");
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+}
+#snakeBoard{
+    background: linear-gradient(rgb(186, 243, 64), rgb(15, 242, 15));
+    position: relative;
+    border: 5px solid rgb(6, 240, 56);
+    border-radius: 20px;
+    min-height: 80vh;
+    min-width: 70vmin;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    box-shadow: rgba(4, 225, 59, 0.35) 0px 5px 15px;
+}
+#score, #highScore{
+    font-size: 30px;
+    height: 5%;
+    color: rgb(239, 48, 0);
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+}
+.head{
+    background: linear-gradient(rgb(117, 33, 3), rgb(238, 122, 5));
+    border-radius: 10px;
+}
+.snakeBody{
+    background: linear-gradient(rgb(49, 47, 27), rgb(18, 232, 7));
+    border-radius: 15px;
+}
+.food{
+    background: linear-gradient(rgb(146, 37, 219), rgb(232, 7, 93));
+    border-radius: 25px; 
+}
